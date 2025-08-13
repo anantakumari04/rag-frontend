@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=18"
+    "node": "18.x"
   },
   "scripts": {
+    "prebuild": "chmod +x node_modules/.bin/vite",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
