@@ -15,7 +15,8 @@ export default function App() {
     setInput('');
     setLoading(true);
     try {
-      const res = await axios.post('https://rag-backend-delta.vercel.app/', { message: input });
+      //const res = await axios.post('http://localhost:8080/api/rag/respond', { message: input });
+      const res = await axios.post('https://rag-backend-delta.vercel.app/api/rag/respond', { message: input })
       const assistant = { role: 'assistant', text: res.data.answer || 'Sorry, no answer' };
       setMessages(m => [...m, assistant]);
     } catch (e) {
