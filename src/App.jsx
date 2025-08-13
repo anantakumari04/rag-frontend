@@ -19,7 +19,19 @@ export default function App() {
       const assistant = { role: 'assistant', text: res.data.answer || 'Sorry, no answer' };
       setMessages(m => [...m, assistant]);
     } catch (e) {
-      setMessages(m => [...m, { role: 'assistant', text: 'Error: ' + (e?.message || 'unknown') }]);
+      console.error('API Error:', e);
+      let errorMessage = 'Unknown error';
+      if (e.response) {
+        // Server responded with error status
+        errorMessage = `Server error: ${e.response.status} - ${e.response.data?.error || e.response.statusText}`;
+      } else if (e.request) {
+        // Request was made but no response received
+        errorMessage = 'No response from server. Is the backend running?';
+      } else {
+        // Something else happened
+        errorMessage = e.message || 'Request failed';
+      }
+      setMessages(m => [...m, { role: 'assistant', text: 'Error: ' + errorMessage }]);
     } finally {
       setLoading(false);
     }
