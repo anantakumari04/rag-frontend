@@ -1,7 +1,7 @@
 # 🌟 Customer Support RAG with Sentiment Analysis
 
 <div align="center">
-  <img src="./assets/banner.png" alt="Project Banner" width="800"/>
+  <img src="./src/image.png" alt="Project Banner" width="800"/>
 </div>
 
 <p align="center">
