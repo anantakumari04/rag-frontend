@@ -78,7 +78,7 @@ Built using <b>MERN stack</b> + <b>Gemini API</b>.
 ## 🌐 Live Demo
 
 <div align="center">
-  <a href="https://your-deployed-app-link">
+  <a href="https://rag-frontend-mauve.vercel.app/">
     <img src="./assets/demo.gif" alt="App Demo" width="700"/>
   </a>
 </div>
