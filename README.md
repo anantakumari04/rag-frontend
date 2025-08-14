@@ -132,7 +132,7 @@ Create .env:
 PORT=8080
 MONGO_URI=your_mongodb_connection_string
 GEMINI_API_KEY=your_gemini_api_key
-VECTOR_DB=your_vector_db_endpoint
+
 
 
 Start backend:
@@ -155,8 +155,7 @@ flowchart TD
     F --> G[Empathetic Response]
     G --> H[Feedback Loop & Metrics]
 
-📊 Metrics & Evaluation
-<table> <tr> <th>Metric</th> <th>Description</th> <th>Target</th> </tr> <tr> <td>Retrieval Accuracy</td> <td>Percentage of relevant articles retrieved</td> <td>≥ 90%</td> </tr> <tr> <td>Response Latency</td> <td>Average response time</td> <td>≤ 2s</td> </tr> <tr> <td>Escalation Prediction</td> <td>Correctly predicts escalation</td> <td>≥ 85%</td> </tr> <tr> <td>Customer Satisfaction</td> <td>User feedback rating</td> <td>≥ 4.5/5</td> </tr> </table>
+
 📝 Contribution
 
 Fork the repository
@@ -174,8 +173,6 @@ Open Pull Request
 🙏 Acknowledgements
 
 Gemini API
-
-Pinecone Vector Database
 
 HuggingFace Embeddings
 
